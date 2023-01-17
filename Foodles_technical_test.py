@@ -15,9 +15,9 @@ def frequency_of_word_in_sentence(sentence, n):
         
         counter = Counter(sorted_sentence_list)
 
-        sorted_and_ordered_sentence_list = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
+        sorted_and_ordered_sentence_dict = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
                     
-        return take_n_elements_from_dict(n, sorted_and_ordered_sentence_list.items())
+        return take_n_elements_from_dict(n, sorted_and_ordered_sentence_dict.items())
         
 
 def returns_the_exact_frequency_of_words():
